@@ -7,8 +7,9 @@ This is a starter repo for using [Remix](https://remix.run) with
 
 ## Development
 
-After cloning the repo, update `.npmrc` with the license key you get from
-[logging in to your account at remix.run](https://remix.run).
+After cloning the repo, rename `.npmrc.example` to `.npmrc` and insert the
+license key you get from [logging in to your dashboard at
+remix.run](https://remix.run).
 
 > Note: if this is a public repo, you'll probably want to move the line with
 > your key into `~/.npmrc` to keep it private.
@@ -30,7 +31,7 @@ $ npm start
 ## Documentation
 
 Detailed documentation for Remix [is available at
-`https://remix.run`](https://remix.run/dashboard/docs).
+remix.run](https://remix.run/dashboard/docs).
 
 ## Project Structure
 
