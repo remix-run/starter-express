@@ -1,8 +1,0 @@
-{
-  "extends": "../config/shared-tsconfig.json",
-  "include": ["**/*"],
-  "compilerOptions": {
-    "outDir": ".",
-    "module": "commonjs"
-  }
-}

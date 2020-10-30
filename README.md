@@ -50,50 +50,6 @@ can run both on the server (to render the HTML needed for the page, aka
 server-side rendering or "SSR") and in the browser. It's your responsibility to
 compile the code in `loaders`, if needed.
 
-This project uses TypeScript for type safety. There are two main TypeScript
-configs in `app/tsconfig.json` and `loaders/tsconfig.json`. The `tsconfig.json`
-in the project root is a "solution" file that just contains
-[references](https://www.typescriptlang.org/docs/handbook/project-references.html)
-to the other two configs.
+## Prefer TypeScript?
 
-## Don't want TypeScript?
-
-This project uses TypeScript, but it's easy enough to remove if you don't want
-to use it. Just remove the `tsconfig.json` files and rename all `.ts` and `.tsx`
-files to `.js` (or `.jsx`, depending on your preference). Then, remove any type
-information from your files.
-
-For example, in `entry-server.js` you should change the `handleRequest` function
-signature from this:
-
-```tsx
-export default function handleRequest(
-  request: Request,
-  responseStatusCode: number,
-  responseHeaders: Headers,
-  remixContext: EntryContext
-) {
-  // ...
-}
-```
-
-to this:
-
-```js
-export default function handleRequest(
-  request,
-  responseStatusCode,
-  responseHeaders,
-  remixContext
-) {
-  // ...
-}
-```
-
-After this is done, you'll also be able to remove the `typescript` dependency:
-
-```sh
-$ npm uninstall typescript
-```
-
-You should also remove all `tsc` commands from the `scripts` in `package.json`.
+The [default branch of this repo](https://github.com/remix-run/starter-express) does the same thing, but using TypeScript.

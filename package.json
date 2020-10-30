@@ -2,8 +2,8 @@
   "name": "remix-starter-express",
   "version": "1.0.0",
   "scripts": {
-    "build": "cross-env NODE_ENV=production remix build && tsc -b",
-    "start": "concurrently \"remix run\" \"tsc -b -w\" \"nodemon --ignore app server.js\""
+    "build": "cross-env NODE_ENV=production remix build",
+    "start": "concurrently \"remix run\" \"nodemon --ignore app server.js\""
   },
   "dependencies": {
     "@remix-run/cli": "^0.6.0",
@@ -18,12 +18,9 @@
     "react-router-dom": "^6.0.0-beta.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
     "concurrently": "^5.3.0",
     "cross-env": "^7.0.2",
-    "nodemon": "^2.0.5",
-    "typescript": "^4.0.3"
+    "nodemon": "^2.0.5"
   },
   "engines": {
     "node": "12"
