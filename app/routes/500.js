@@ -4,7 +4,7 @@ export function meta() {
   return { title: "Shoot..." };
 }
 
-export default function FourOhFour() {
+export default function FiveHundred() {
   console.error("Check your server terminal output");
 
   return (
