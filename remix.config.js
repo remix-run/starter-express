@@ -35,7 +35,7 @@ module.exports = {
    * to "loaders". The loaders directory contains "data loaders" for your
    * routes.
    */
-  loadersDirectory: "loaders",
+  loadersDirectory: "build/loaders",
 
   /**
    * The path to the browser build, relative to remix.config.js. Defaults to
@@ -56,7 +56,7 @@ module.exports = {
    * that are created from building your routes. They are used on the server to
    * generate HTML.
    */
-  serverBuildDirectory: "server-build",
+  serverBuildDirectory: "build/app",
 
   /**
    * The port to use when running `remix run`. Defaults to 8002.

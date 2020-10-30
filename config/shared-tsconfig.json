@@ -5,8 +5,7 @@
     "moduleResolution": "node",
     "target": "es2019",
     "strict": true,
-    "skipLibCheck": true,
-    "declaration": true
+    "skipLibCheck": true
   },
   "exclude": ["node_modules"]
 }
