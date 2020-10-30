@@ -25,7 +25,7 @@ Your `@remix-run/*` dependencies will come from the Remix package registry.
 Once everything is installed, start the app with the following command:
 
 ```sh
-$ npm start
+$ npm run dev
 ```
 
 ## Documentation

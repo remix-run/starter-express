@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "cross-env NODE_ENV=production remix build && tsc -b",
-    "start": "concurrently \"remix run\" \"tsc -b -w\" \"nodemon --ignore app server.js\""
+    "dev": "concurrently \"remix run\" \"tsc -b -w\" \"nodemon --ignore app server.js\"",
+    "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@remix-run/cli": "^0.6.0",
