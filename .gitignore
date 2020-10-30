@@ -1,7 +1,5 @@
 node_modules/
 
-/server-build
-/public/build
-/yarn-error.log
 /.cache
-
+/build
+/public/build

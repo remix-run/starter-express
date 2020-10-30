@@ -22,11 +22,30 @@ $ npm install
 
 Your `@remix-run/*` dependencies will come from the Remix package registry.
 
-Once everything is installed, start the app with the following command:
+Once everything is installed, start the app in development mode with the
+following command:
 
 ```sh
+$ npm run dev
+```
+
+This will run a few processes concurrently that will dynamically rebuild as your
+source files change. To see your changes, refresh the browser.
+
+> Note: Hot module reloading is coming soon, which will allow you to see your
+> changes without refreshing.
+
+## Production
+
+To run the app in production mode, you'll need to build it first.
+
+```sh
+$ npm run build
 $ npm start
 ```
+
+This will start a single HTTP server process that will serve the app from the
+files generated in the build step.
 
 ## Documentation
 
