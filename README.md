@@ -58,42 +58,7 @@ to the other two configs.
 
 ## Don't want TypeScript?
 
-This project uses TypeScript, but it's easy enough to remove if you don't want
-to use it. Just remove the `tsconfig.json` files and rename all `.ts` and `.tsx`
-files to `.js` (or `.jsx`, depending on your preference). Then, remove any type
-information from your files.
-
-For example, in `entry-server.js` you should change the `handleRequest` function
-signature from this:
-
-```tsx
-export default function handleRequest(
-  request: Request,
-  responseStatusCode: number,
-  responseHeaders: Headers,
-  remixContext: EntryContext
-) {
-  // ...
-}
-```
-
-to this:
-
-```js
-export default function handleRequest(
-  request,
-  responseStatusCode,
-  responseHeaders,
-  remixContext
-) {
-  // ...
-}
-```
-
-After this is done, you'll also be able to remove the `typescript` dependency:
-
-```sh
-$ npm uninstall typescript
-```
-
-You should also remove all `tsc` commands from the `scripts` in `package.json`.
+The [`no-typescript`
+branch](https://github.com/remix-run/starter-express/tree/no-typescript) is a
+version of this same starter template that uses plain JavaScript instead of
+TypeScript for all code in `app` and `loaders`.
