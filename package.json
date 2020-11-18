@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "remix build && tsc -b",
-    "dev": "concurrently \"remix run\" \"tsc -b -w\" \"cross-env NODE_ENV=development nodemon --ignore app server.js\"",
+    "dev": "concurrently \"remix run\" \"tsc -b -w\" \"cross-env NODE_ENV=development nodemon -w app -w loaders -e js,ts,tsx server.js\"",
     "start": "node server.js"
   },
   "dependencies": {
