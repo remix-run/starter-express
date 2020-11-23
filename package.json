@@ -4,7 +4,7 @@
   "scripts": {
     "postinstall": "tsc -b",
     "build": "remix build && tsc -b",
-    "dev": "concurrently \"remix run\" \"tsc -b -w\" \"cross-env NODE_ENV=development nodemon -w app -w build -e js,ts,tsx,md,mdx server.js\"",
+    "dev": "concurrently \"remix run\" \"tsc -b -w --preserveWatchOutput\" \"cross-env NODE_ENV=development nodemon -w app -w build -e js,ts,tsx,md,mdx server.js\"",
     "start": "node server.js"
   },
   "dependencies": {
