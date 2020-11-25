@@ -23,7 +23,7 @@ app.use(
   })
 );
 
-app.get(
+app.all(
   "*",
   createRequestHandler({
     // Uncomment the following line if you don't want sessions. This will
