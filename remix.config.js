@@ -21,7 +21,7 @@ module.exports = {
   //       "pages/one",
   //       // Options:
   //       {
-  //         // The path to this route's data loader, relative to `loadersDirectory`.
+  //         // The path to this route's data module, relative to `dataDirectory`.
   //         loader: "...",
   //         // The path to this route's styles file, relative to `appDirectory`.
   //         styles: "..."
@@ -31,11 +31,10 @@ module.exports = {
   // },
 
   /**
-   * The path to the `loaders` directory, relative to remix.config.js. Defaults
-   * to "loaders". The loaders directory contains "data loaders" for your
-   * routes.
+   * The path to the `data` directory, relative to remix.config.js. Defaults
+   * to "data". The data directory contains data modules for your routes.
    */
-  loadersDirectory: "build/loaders",
+  dataDirectory: "data-build",
 
   /**
    * The path to the browser build, relative to remix.config.js. Defaults to
