@@ -1,5 +1,6 @@
 {
   "name": "remix-starter-express",
+  "private": true,
   "version": "1.0.0",
   "scripts": {
     "build": "remix build",
