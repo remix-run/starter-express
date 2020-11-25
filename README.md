@@ -55,19 +55,19 @@ remix.run](https://remix.run/dashboard/docs).
 ## Project Structure
 
 There are 2 main directories you will want to be familiar with: `app` and
-`loaders`.
+`data`.
 
 - The `app` directory contains the major pieces that make up the frontend of
   your application. These include the entry points, routes, and CSS files.
   Most of the code in this directory runs both on the server _and_ in the
   browser.
-- The `loaders` directory contains functions that supply data to the frontend.
+- The `data` directory contains modules that serve as your "backend".
   These functions run only in node.js.
 
 Remix is responsible for compiling everything in your `app` directory so that it
 can run both on the server (to render the HTML needed for the page, aka
 server-side rendering or "SSR") and in the browser. It's your responsibility to
-compile the code in `loaders`, if needed.
+compile the code in `data`, if needed.
 
 ## Prefer TypeScript?
 

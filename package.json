@@ -2,16 +2,17 @@
   "name": "remix-starter-express",
   "version": "1.0.0",
   "scripts": {
-    "build": "cross-env NODE_ENV=production remix build",
-    "dev": "concurrently \"remix run\" \"nodemon --ignore app server.js\"",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "build": "remix build",
+    "dev": "concurrently \"remix run\" \"cross-env NODE_ENV=development nodemon -w app -w build -e js,jsx,ts,tsx,md,mdx server.js\"",
+    "start": "node server.js"
   },
   "dependencies": {
-    "@remix-run/cli": "^0.6.2",
-    "@remix-run/express": "^0.6.2",
-    "@remix-run/loader": "^0.6.2",
-    "@remix-run/react": "^0.6.2",
+    "@remix-run/cli": "^0.8.0",
+    "@remix-run/data": "^0.8.0",
+    "@remix-run/express": "^0.8.0",
+    "@remix-run/react": "^0.8.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "morgan": "^1.10.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
