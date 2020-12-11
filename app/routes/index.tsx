@@ -1,10 +1,9 @@
-import React from "react";
 import { useRouteData } from "@remix-run/react";
 
 export function meta() {
   return {
     title: "Remix Starter",
-    description: "Welcome to remix!"
+    description: "Welcome to remix!",
   };
 }
 

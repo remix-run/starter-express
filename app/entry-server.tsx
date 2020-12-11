@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOMServer from "react-dom/server";
 import type { EntryContext } from "@remix-run/core";
 import Remix from "@remix-run/react/server";
@@ -21,7 +20,7 @@ export default function handleRequest(
     status: responseStatusCode,
     headers: {
       ...Object.fromEntries(responseHeaders),
-      "Content-Type": "text/html"
-    }
+      "Content-Type": "text/html",
+    },
   });
 }
