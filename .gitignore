@@ -1,6 +1,4 @@
 node_modules/
 
-/.cache
 /build
-/data-build
 /public/build
