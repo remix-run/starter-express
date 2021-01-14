@@ -5,11 +5,11 @@ const { createRequestHandler } = require("@remix-run/express");
 
 let app = express();
 
+app.use(express.static("public"));
+
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
-
-app.use(express.static("public"));
 
 // Sessions are optional. If you don't want them, just remove this middleware.
 // Otherwise, you should configure it with a session store other than the memory
@@ -19,7 +19,7 @@ app.use(
     secret: "r3mixR0x",
     resave: false,
     saveUninitialized: true,
-    sameSite: true
+    sameSite: true,
   })
 );
 
@@ -32,7 +32,7 @@ app.all(
     getLoadContext() {
       // Whatever you return here will be passed as `context` to your loaders
       // and actions.
-    }
+    },
   })
 );
 

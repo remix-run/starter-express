@@ -5,9 +5,6 @@
     "moduleResolution": "node",
     "target": "es2019",
     "strict": true,
-    "skipLibCheck": true,
-
-    // Remix takes care of compiling TypeScript for you in `remix build`.
-    "noEmit": true
+    "skipLibCheck": true
   }
 }
