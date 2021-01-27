@@ -1,7 +1,13 @@
-import { Meta, Scripts, Styles, Routes, useGlobalData } from "@remix-run/react";
+import type { Loader } from "@remix-run/data";
+import { Meta, Scripts, Styles, useRouteData } from "@remix-run/react";
+import { Outlet } from "react-router-dom";
+
+export let loader: Loader = async () => {
+  return { date: new Date() };
+};
 
 export default function App() {
-  let data = useGlobalData();
+  let data = useRouteData();
 
   return (
     <html lang="en">
@@ -11,12 +17,11 @@ export default function App() {
         <Styles />
       </head>
       <body>
-        <Routes />
+        <Outlet />
 
         <footer>
           <p>This page was rendered at {data.date.toLocaleString()}</p>
         </footer>
-
         <Scripts />
       </body>
     </html>

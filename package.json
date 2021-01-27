@@ -8,10 +8,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@remix-run/cli": "^0.9.1",
-    "@remix-run/data": "^0.9.1",
-    "@remix-run/express": "^0.9.1",
-    "@remix-run/react": "^0.9.1",
+    "@remix-run/cli": "^0.10.0",
+    "@remix-run/data": "^0.10.0",
+    "@remix-run/express": "^0.10.0",
+    "@remix-run/react": "^0.10.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
