@@ -16,7 +16,7 @@ export default function handleRequest(
     status: responseStatusCode,
     headers: {
       ...Object.fromEntries(responseHeaders),
-      "Content-Type": "text/html",
-    },
+      "Content-Type": "text/html"
+    }
   });
 }
