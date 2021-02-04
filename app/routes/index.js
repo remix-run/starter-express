@@ -1,5 +1,8 @@
-import React from "react";
 import { useRouteData } from "@remix-run/react";
+
+export async function loader() {
+  return { message: "this is awesome 😎" };
+}
 
 export function meta() {
   return {

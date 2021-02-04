@@ -2,17 +2,13 @@
 
 Welcome to Remix!
 
-This is a starter repo for using [Remix](https://remix.run) with
-[Express](http://expressjs.com/).
+This is a starter repo for using [Remix](https://remix.run) with [Express](http://expressjs.com/).
 
 ## Development
 
-After cloning the repo, rename `.npmrc.example` to `.npmrc` and insert the
-license key you get from [logging in to your dashboard at
-remix.run](https://remix.run).
+After cloning the repo, rename `.npmrc.example` to `.npmrc` and insert the license key you get from [logging in to your dashboard at remix.run](https://remix.run). 
 
-> Note: if this is a public repo, you'll probably want to move the line with
-> your key into `~/.npmrc` to keep it private.
+> Note: if this is a public repo, you'll probably want to move the line with your key into `~/.npmrc` to keep it private.
 
 Then, install all dependencies using `npm`:
 
@@ -22,18 +18,15 @@ $ npm install
 
 Your `@remix-run/*` dependencies will come from the Remix package registry.
 
-Once everything is installed, start the app in development mode with the
-following command:
+Once everything is installed, start the app in development mode with the following command:
 
 ```sh
 $ npm run dev
 ```
 
-This will run a few processes concurrently that will dynamically rebuild as your
-source files change. To see your changes, refresh the browser.
+This will run a few processes concurrently that will dynamically rebuild as your source files change. To see your changes, refresh the browser.
 
-> Note: Hot module reloading is coming soon, which will allow you to see your
-> changes without refreshing.
+> Note: Hot module reloading is coming soon, which will allow you to see your changes without refreshing.
 
 ## Production
 
@@ -44,30 +37,11 @@ $ npm run build
 $ npm start
 ```
 
-This will start a single HTTP server process that will serve the app from the
-files generated in the build step.
+This will start a single HTTP server process that will serve the app from the files generated in the build step.
 
 ## Documentation
 
-Detailed documentation for Remix [is available at
-remix.run](https://remix.run/dashboard/docs).
-
-## Project Structure
-
-There are 2 main directories you will want to be familiar with: `app` and
-`data`.
-
-- The `app` directory contains the major pieces that make up the frontend of
-  your application. These include the entry points, routes, and CSS files.
-  Most of the code in this directory runs both on the server _and_ in the
-  browser.
-- The `data` directory contains modules that serve as your "backend".
-  These functions run only in node.js.
-
-Remix is responsible for compiling everything in your `app` directory so that it
-can run both on the server (to render the HTML needed for the page, aka
-server-side rendering or "SSR") and in the browser. It's your responsibility to
-compile the code in `data`, if needed.
+Detailed documentation for Remix [is available at remix.run](https://remix.run/dashboard/docs).
 
 ## Prefer TypeScript?
 
