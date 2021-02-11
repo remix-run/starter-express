@@ -1,10 +1,15 @@
-import type { Loader } from "@remix-run/data";
-import { Meta, Scripts, Styles, useRouteData } from "@remix-run/react";
+import { Meta, Links, Scripts, useRouteData } from "@remix-run/react";
 import { Outlet } from "react-router-dom";
 
-export let loader: Loader = async () => {
+import styles from "url:./styles/global.css";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
+
+export function loader() {
   return { date: new Date() };
-};
+}
 
 export default function App() {
   let data = useRouteData();
@@ -14,7 +19,7 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <Meta />
-        <Styles />
+        <Links />
       </head>
       <body>
         <Outlet />
@@ -28,7 +33,7 @@ export default function App() {
   );
 }
 
-export function ErrorBoundary({ error }: { error: Error }) {
+export function ErrorBoundary({ error }) {
   return (
     <html lang="en">
       <head>

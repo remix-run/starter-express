@@ -1,14 +1,20 @@
 import { useRouteData } from "@remix-run/react";
 
-export async function loader() {
-  return { message: "this is awesome 😎" };
-}
+import styles from "url:../styles/index.css";
 
 export function meta() {
   return {
     title: "Remix Starter",
     description: "Welcome to remix!"
   };
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
+
+export function loader() {
+  return { message: "this is awesome 😎" };
 }
 
 export default function Index() {
