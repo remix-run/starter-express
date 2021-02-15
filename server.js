@@ -1,7 +1,6 @@
 const express = require("express");
 const compression = require("compression");
 const morgan = require("morgan");
-const session = require("express-session");
 const { createRequestHandler } = require("@remix-run/express");
 
 let app = express();
@@ -21,13 +20,10 @@ if (process.env.NODE_ENV === "development") {
 app.all(
   "*",
   createRequestHandler({
-    // Uncomment the following line if you don't want sessions. This will
-    // disable the warning message when no session middleware is present.
-    //enableSessions: false,
     getLoadContext() {
       // Whatever you return here will be passed as `context` to your loaders
       // and actions.
-    },
+    }
   })
 );
 
