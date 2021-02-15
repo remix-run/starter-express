@@ -18,18 +18,6 @@ if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
 
-// Sessions are optional. If you don't want them, just remove this middleware.
-// Otherwise, you should configure it with a session store other than the memory
-// store so they persist. See https://www.npmjs.com/package/express-session
-app.use(
-  session({
-    secret: "r3mixR0x",
-    resave: false,
-    saveUninitialized: true,
-    sameSite: true,
-  })
-);
-
 app.all(
   "*",
   createRequestHandler({
