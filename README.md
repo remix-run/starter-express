@@ -43,6 +43,12 @@ This will start a single HTTP server process that will serve the app from the fi
 
 Detailed documentation for Remix [is available at remix.run](https://remix.run/dashboard/docs).
 
+## Project Structure
+
+All application source code is found in the `app` directory. This includes your application entry points for both server rendering (see `app/entry.server.js`) and the browser (see `app/entry.client.js`), as well as your root component and routes (see `app/root.js` and `app/routes`).
+
+Everything in the `public` directory is served by `express.static`.
+
 ## Prefer TypeScript?
 
 The [default branch of this repo](https://github.com/remix-run/starter-express) does the same thing, but using TypeScript.
