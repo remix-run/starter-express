@@ -45,7 +45,7 @@ Detailed documentation for Remix [is available at remix.run](https://remix.run/d
 
 ## Project Structure
 
-All application source code is found in the `app` directory. This includes your application entry points for both server rendering (see `app/entry-server.ts`) and the browser (see `app/entry-browser.ts`), as well as your root component and routes (see `app/App.tsx` and `app/routes`).
+All application source code is found in the `app` directory. This includes your application entry points for both server rendering (see `app/entry.server.tsx`) and the browser (see `app/entry.client.tsx`), as well as your root component and routes (see `app/root.tsx` and `app/routes`).
 
 Everything in the `public` directory is served by `express.static`.
 
