@@ -3,21 +3,21 @@ module.exports = {
     {
       name: "Express",
       script: "server.js",
-      watch: ["remix.config.js", "app"],
+      watch: ["build/assets.json"],
       watch_options: {
-        followSymlinks: false,
+        followSymlinks: false
       },
       env: {
-        NODE_ENV: "development",
-      },
+        NODE_ENV: "development"
+      }
     },
     {
       name: "Remix",
       script: "remix run",
       ignore_watch: ["."],
       env: {
-        NODE_ENV: "development",
-      },
-    },
-  ],
+        NODE_ENV: "development"
+      }
+    }
+  ]
 };
