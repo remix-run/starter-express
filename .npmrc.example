@@ -1,7 +1,0 @@
-# Swap out "<Remix License Key>" below with the key you get from logging in
-# to https://remix.run. If this is a public repo, you'll want to move this
-# line into ~/.npmrc to keep it private.
-//npm.remix.run/:_authToken=<Remix License Key>
-
-# This line tells npm where to find @remix-run packages.
-@remix-run:registry=https://npm.remix.run

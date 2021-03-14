@@ -1,0 +1,15 @@
+# This file describes your Render infrastructure as code.
+# See https://render.com/docs/infrastructure-as-code for more.
+services:
+- type: web
+  name: remix-starter-express
+  env: node
+  plan: starter
+  healthCheckPath: /
+  buildCommand: npm install; npm run build
+  startCommand: npm start
+  envVars:
+  - key: NODE_VERSION
+    value: 12.21.0
+  - key: REMIX_REGISTRY_TOKEN
+    sync: false # set the value in your Render dashboard

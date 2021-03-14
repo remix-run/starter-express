@@ -6,9 +6,12 @@ This is a starter repo for using [Remix](https://remix.run) with [Express](http:
 
 ## Development
 
-After cloning the repo, rename `.npmrc.example` to `.npmrc` and insert the license key you get from [logging in to your dashboard at remix.run](https://remix.run). 
+Find your Remix license key by [logging in to your dashboard at remix.run](https://remix.run) and export it as an environment variable in your shell:
 
-> Note: if this is a public repo, you'll probably want to move the line with your key into `~/.npmrc` to keep it private.
+```sh
+$ export REMIX_REGISTRY_TOKEN=your-remix-license-key
+```
+You can also add the line above to your `.bashrc` or `.zshrc` file to always have the variable set across your development environment.
 
 Then, install all dependencies using `npm`:
 
@@ -38,6 +41,17 @@ $ npm start
 ```
 
 This will start a single HTTP server process that will serve the app from the files generated in the build step.
+
+### Hosting on Render
+[Render](https://render.com) is a fully-managed cloud where you can host static sites, APIs, databases, cron jobs and all other apps in a single place.
+
+Click the button below to deploy the starter on Render.
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+**Remember to set the value of `REMIX_REGISTRY_TOKEN` to your license key when you create your service on Render.**
+
+The button uses [`render.yaml`](render.yaml) to set up your Remix app on Render. You can use this file as a starting point for your own Remix projects on Render. Learn more at [Render Infrastructure as Code](https://render.com/docs/infrastructure-as-code).
 
 ## Documentation
 
