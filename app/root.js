@@ -1,10 +1,10 @@
 import { Meta, Links, Scripts, useRouteData } from "@remix-run/react";
 import { Outlet } from "react-router-dom";
 
-import styles from "url:./styles/global.css";
+import stylesUrl from "./styles/global.css";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: "stylesheet", href: stylesUrl }];
 }
 
 export function loader() {

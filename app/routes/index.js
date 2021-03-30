@@ -1,6 +1,6 @@
 import { useRouteData } from "@remix-run/react";
 
-import styles from "url:../styles/index.css";
+import stylesUrl from "../styles/index.css";
 
 export function meta() {
   return {
@@ -10,7 +10,7 @@ export function meta() {
 }
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: "stylesheet", href: stylesUrl }];
 }
 
 export function loader() {
