@@ -2,15 +2,15 @@
   "private": true,
   "name": "remix-starter-express",
   "scripts": {
-    "postinstall": "remix build2",
+    "postinstall": "npm run build",
     "build": "remix build2",
     "dev": "pm2-dev pm2.config.js",
     "start": "node server.js"
   },
   "dependencies": {
-    "@remix-run/express": "^0.15.0",
-    "@remix-run/node": "^0.15.0",
-    "@remix-run/react": "^0.15.0",
+    "@remix-run/express": "^0.15.1",
+    "@remix-run/node": "^0.15.1",
+    "@remix-run/react": "^0.15.1",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
@@ -19,7 +19,7 @@
     "react-router-dom": "^6.0.0-beta.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^0.15.0",
+    "@remix-run/dev": "^0.15.1",
     "pm2": "^4.5.4"
   },
   "sideEffects": false,
