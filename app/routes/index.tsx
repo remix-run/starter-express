@@ -5,7 +5,7 @@ import type {
 } from "@remix-run/react";
 import { useRouteData } from "@remix-run/react";
 
-import styles from "url:../styles/index.css";
+import stylesUrl from "../styles/index.css";
 
 export let meta: MetaFunction = () => {
   return {
@@ -15,7 +15,7 @@ export let meta: MetaFunction = () => {
 };
 
 export let links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: "stylesheet", href: stylesUrl }];
 };
 
 export let loader: LoaderFunction = async () => {
