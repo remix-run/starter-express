@@ -8,19 +8,18 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@remix-run/express": "^0.15.0-pre.4",
-    "@remix-run/node": "^0.15.0-pre.4",
-    "@remix-run/react": "^0.15.0-pre.4",
+    "@remix-run/express": "^0.15.0",
+    "@remix-run/node": "^0.15.0",
+    "@remix-run/react": "^0.15.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^0.15.0-pre.4",
+    "@remix-run/dev": "^0.15.0",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "pm2": "^4.5.4",
