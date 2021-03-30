@@ -2,7 +2,7 @@
   "private": true,
   "name": "remix-starter-express",
   "scripts": {
-    "postinstall": "remix build2",
+    "postinstall": "npm run build",
     "build": "remix build2",
     "dev": "pm2-dev pm2.config.js",
     "start": "node server.js"
