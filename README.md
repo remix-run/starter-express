@@ -41,7 +41,7 @@ This will start a single HTTP server process that will serve the app from the fi
 
 ## Documentation
 
-Detailed documentation for Remix [is available at remix.run](https://remix.run/dashboard/docs).
+Detailed documentation for Remix [is available at remix.run](https://docs.remix.run).
 
 ## Project Structure
 
