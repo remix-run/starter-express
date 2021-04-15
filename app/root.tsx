@@ -47,7 +47,7 @@ export function ErrorBoundary({ error }: { error: Error }) {
           <pre>{error.message}</pre>
           <p>
             Replace this UI with what you want users to see when your app throws
-            uncaught errors. The file is at <code>app/App.tsx</code>.
+            uncaught errors. The file is at <code>app/root.tsx</code>.
           </p>
         </div>
 
