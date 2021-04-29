@@ -1,3 +1,8 @@
+## Please Don't Use
+
+> Please use `npm init remix` instead of this starter repo to create a new Remix app.
+> This repository was archived on April 29, 2021.
+
 # Remix Starter for Express
 
 Welcome to Remix!
